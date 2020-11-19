@@ -1,0 +1,135 @@
+/*Font-family*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7ed6df;
+  font-family: "Lato", "Sans-serif", "Arial";
+  height: 100vh;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Nav */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Welcome page */
+.welcome {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.welcome-button {
+  border: 2px solid #27ae60;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Buttons */
+
+.btn {
+  margin: 30px 0;
+  padding: 10px;
+}
+
+/* Listsida */
+
+ol,
+li {
+  padding: 0.3rem;
+  margin-left: 2rem;
+}
+
+ul {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.movie-list li:nth-child(1) {
+  color: #e67e22;
+}
+.movie-list li:nth-child(2) {
+  color: #9b59b6;
+}
+.movie-list li:nth-child(3) {
+  color: #34495e;
+}
+
+.movie-list li:nth-child(4) {
+  color: #e74c3c;
+}
+.movie-list li:nth-child(5) {
+  color: #16a085;
+}
+
+/* Animeringar */
+
+@keyframes my-animation {
+  from {
+    background-color: rgb(0, 81, 255);
+    font-size: 1rem;
+    width: 300px;
+    height: 200px;
+  }
+  to {
+    background-color: rgb(0, 255, 42);
+    font-size: 3rem;
+  }
+}
+
+.animation {
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  animation-name: my-animation;
+  animation-duration: 3s;
+  margin-top: 20%;
+  margin-left: 20%;
+}
+
+/* Hoverlist */
+
+ul li {
+  position: relative;
+}
+
+ul ul {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul > li:hover ul {
+  display: block;
+}
+
+/* Transition */
+
+.transition {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 3s, background-color 3s;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+.transition:hover {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(24, 207, 24);
+}
